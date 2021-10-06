@@ -28,7 +28,10 @@ Ainsi, lorsque vous télé-déclarez vos impôts en ligne par exemple, l'imputab
 
 La traçabilité, quant à elle, permet de connaître l'heure à laquelle vous avez soumis votre déclaration d'impôts.
 
-![Placeholder](images/image1.png){ align=left }
+<!-- ![Placeholder](images/image1.png){ align=left } -->
+<div align='center'>
+   <img src="images/image1.png">
+</div>
 
 ## Facteurs de l'authentification
 
