@@ -30,7 +30,7 @@ La traçabilité, quant à elle, permet de connaître l'heure à laquelle vous a
 
 <!-- ![Placeholder](images/image1.png =100x20){ align=left , width=50%} -->
 <!--<img src="images/image1.png" width="500" align="center"> -->
-<p style="text-align:center;"><img src="images/image1.png" width="500"></p>
+<div align='center'><img src="images/image1.png" width="500"></div>
 
 ## Facteurs de l'authentification
 
