@@ -16,7 +16,7 @@ souris
 
 Ensuite, testez le code suivant dans l'interpréteur *Python* :
 
-```python class:"lineNo"
+````python class:"lineNo"
 >>> filin = open("zoo.txt", "r")
 >>> filin
 <_io.TextIOWrapper name='zoo.txt' mode='r' encoding='UTF-8'>
@@ -27,7 +27,7 @@ Ensuite, testez le code suivant dans l'interpréteur *Python* :
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: I/O operation on closed file.
-```
+````
 
 Il y a plusieurs commentaires à faire sur cet exemple :
 
