@@ -1,6 +1,7 @@
 # Dictionnaires, tuples et sets
 
-Jusqu'à maintenant nous avons vu et manipulé le type d'objet séquentiel le plus classique : les listes. On se rappelle qu'elles sont modifiables, ordonnées et itérables. Dans ce chapitre nous allons voir trois nouveaux types d'objet séquentiel avec des propriétés différentes : les dictionnaires, les tuples et les sets.
+Jusqu'à maintenant nous avons vu et manipulé le type d'objet séquentiel le plus classique : les listes.  
+On se rappelle qu'elles sont modifiables, ordonnées et itérables. Dans ce chapitre nous allons voir trois nouveaux types d'objet séquentiel avec des propriétés différentes : les dictionnaires, les tuples et les sets.
 
 
 > Remarque
@@ -526,7 +527,7 @@ Attention, cela n'est vrai que dans l'interpréteur.
 
 > Remarque
 > 
-> Le underscore est couramment utilisé dans les noms de variable pour séparer les mots et être explicite, par exemple seq_ADN ou liste_listes_residus. On verra dans le chapitre 15 Bonnes pratiques en programmation Python que ce style de nommage est appelé snake_case. Toutefois, il faut éviter d'utiliser les underscores en début et/ou en fin de nom de variable (e.g. ```_var, var_, __var, __var__```). On verra au chapitre 19 Avoir la classe avec les objets que ces underscores ont une signification particulière.
+> Le underscore est couramment utilisé dans les noms de variable pour séparer les mots et être explicite, par exemple seq_ADN ou liste_listes_residus. On verra dans le chapitre 15 Bonnes pratiques en programmation Python que ce style de nommage est appelé snake_case. Toutefois, il faut éviter d'utiliser les underscores en début et/ou en fin de nom de variable (e.g. `_var`, `var_`, `__var`, `__var__`). On verra au chapitre 19 Avoir la classe avec les objets que ces underscores ont une signification particulière.
 
 
 ## Sets
@@ -561,6 +562,7 @@ En général, on utilisera la fonction interne à Python set() pour générer un
 {'h', 'u', 'o', 'b', ' ', 'M', 'a', 'p', 'n', 'e', 'é', 'c', 'î', 's', 't', 'r'}
 ```
 
+
 Nous avons dit plus haut que les sets ne sont pas ordonnés, il est donc impossible de récupérer un élément par sa position. Il est également impossible de modifier un de ses éléments. Par contre, les sets sont itérables :
 
 ```python
@@ -577,6 +579,7 @@ TypeError: 'set' object is not subscriptable
 4
 ```
 
+
 Les containers de type set sont très utiles pour rechercher les éléments uniques d'une suite d'éléments. Cela revient à éliminer tous les doublons. Par exemple :
 
 ```python
@@ -588,12 +591,14 @@ Les containers de type set sont très utiles pour rechercher les éléments uniq
 {3, 5, 6, 7, 8, 9}
 ```
 
+
 On peut bien sûr transformer dans l'autre sens un set en liste. Cela permet par exemple d'éliminer les doublons de la liste initiale tout en récupérant une liste à la fin :
 
 ```python
 >>> list(set([7, 9, 6, 6, 7, 3, 8, 5, 6, 7]))
 [3, 5, 6, 7, 8, 9]
 ```
+
 
 On peut faire des choses très puissantes. Par exemple, un compteur de lettres en combinaison avec une liste de compréhension, le tout en une ligne !
 
@@ -604,6 +609,7 @@ On peut faire des choses très puissantes. Par exemple, un compteur de lettres e
 >>> [(base, seq.count(base)) for base in set(seq)]
 [('c', 15), ('g', 10), ('t', 11), ('a', 10)]
 ```
+
 
 Les sets permettent aussi l'évaluation d'union ou d'intersection mathématiques en conjonction avec les opérateurs respectivement | et & :
 
@@ -616,13 +622,17 @@ Les sets permettent aussi l'évaluation d'union ou d'intersection mathématiques
 {0, 1, 2, 3, 4, 5}
 ```
 
-Conseils
 
-Pour aller plus loin, vous pouvez consulter deux articles sur les sites programiz et towardsdatascience.
+> Conseils
+> 
+> Pour aller plus loin, vous pouvez consulter deux articles sur les sites programiz et towardsdatascience.
 
-13.4 Dictionnaires et sets de compréhension
 
-Conseil : pour les débutants, vous pouvez passer cette rubrique.
+### Dictionnaires et sets de compréhension
+
+
+> Conseil : pour les débutants, vous pouvez passer cette rubrique.
+
 
 Nous avons vu au chapitre 11 Plus sur les listes les listes de compréhension. Il est également possible de générer des dictionnaires de compréhension :
 
@@ -641,6 +651,7 @@ dict_items([('a', 10), ('g', 10), ('t', 11), ('c', 15)])
 {'a': 10, 'g': 10, 't': 11, 'c': 15}
 ```
 
+
 De manière générale, tout objet sur lequel on peut faire une double itération du type for var1, var2 in obj est utilisable pour créer un dictionnaire de compréhension. Si vous souhaitez aller plus loin, vous pouvez consulter cet article sur le site Datacamp.
 
 Il est également possible de générer des sets de compréhension sur le même modèle que les listes de compréhension :
@@ -652,16 +663,20 @@ Il est également possible de générer des sets de compréhension sur le même 
 {0, 1, 64, 4, 36, 9, 16, 49, 81, 25}
 ```
 
-13.5 Module collections
 
-Conseil : pour les débutants, vous pouvez passer cette rubrique.
+### Module collections
+
+
+> Conseil : pour les débutants, vous pouvez passer cette rubrique.
+
 
 Le module collections contient d'autres types de containers qui peuvent se révéler utiles, c'est une véritable mine d'or ! Nous n'aborderons pas tous ces objets ici, mais nous pouvons citer tout de même certains d'entre eux si vous souhaitez aller un peu plus loin :
 
-    les dictionnaires ordonnés qui se comportent comme les dictionnaires classiques mais qui sont ordonnés ;
-    les defaultdicts permettant de générer des valeurs par défaut quand on demande une clé qui n'existe pas (cela évite que Python génère une erreur) ;
-    les compteurs dont un exemple est montré ci-dessous ;
-    les namedtuples que nous évoquerons au chapitre 19 Avoir la classe avec les objets.
+*    les dictionnaires ordonnés qui se comportent comme les dictionnaires classiques mais qui sont ordonnés ;
+*    les defaultdicts permettant de générer des valeurs par défaut quand on demande une clé qui n'existe pas (cela évite que Python génère une erreur) ;
+*    les compteurs dont un exemple est montré ci-dessous ;
+*    les namedtuples que nous évoquerons au chapitre 19 Avoir la classe avec les objets.
+
 
 L'objet collection.Counter() est particulièrement intéressant et simple à utiliser. Il crée des compteurs à partir d'objets itérables, par exemple :
 
@@ -677,5 +692,6 @@ Counter({'a': 7, 't': 7, 'c': 7, 'g': 5})
 >>> compo_seq["n"]
 0
 ```
+
 
 On voit que Python a automatiquement compté chaque atgc de la chaîne de caractères passée en argument ! Cela crée un objet de type Counterqui se comporte ensuite comme un dictionnaire, à une exception près : si on appelle une clé qui n'existe pas dans l'itérable initiale (comme le n ci-dessus) cela renvoie 0.
