@@ -16,7 +16,7 @@ souris
 
 Ensuite, testez le code suivant dans l'interpréteur *Python* :
 
-````python class:"lineNo"
+````python {.line-numbers}
 >>> filin = open("zoo.txt", "r")
 >>> filin
 <_io.TextIOWrapper name='zoo.txt' mode='r' encoding='UTF-8'>
