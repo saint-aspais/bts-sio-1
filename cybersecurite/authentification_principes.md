@@ -87,7 +87,7 @@ Aujourd’hui, il est en effet assez répandu de pouvoir activer un deuxième fa
 
 
 <!-- ![Placeholder](images/image2.png){ width="500" align="center" } -->
-<img src="images/image2.png" width="500" align="center">
+<div align='center'><img src="images/image2.png" width="500" align="center"></div>
 
 # Limites des facteurs d'authentification
 
