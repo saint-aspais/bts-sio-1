@@ -86,7 +86,8 @@ Ce type d'authentification est souvent utilisé pour se protéger des faiblesses
 Aujourd’hui, il est en effet assez répandu de pouvoir activer un deuxième facteur d'authentification pour accéder à sa messagerie électronique et de devoir saisir un code reçu par SMS après avoir entré son mot de passe.
 
 
-![Placeholder](images/image2.png){ width="500" align="center" }
+<!-- ![Placeholder](images/image2.png){ width="500" align="center" } -->
+<img src="images/image2.png" width="500" align="center">
 
 # Limites des facteurs d'authentification
 
