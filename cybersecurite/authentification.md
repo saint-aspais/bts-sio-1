@@ -29,9 +29,7 @@ Ainsi, lorsque vous télé-déclarez vos impôts en ligne par exemple, l'imputab
 La traçabilité, quant à elle, permet de connaître l'heure à laquelle vous avez soumis votre déclaration d'impôts.
 
 <!-- ![Placeholder](images/image1.png){ align=left } -->
-<div align='center'>
-   <img src="images/image1.png">
-</div>
+<div align='center'><img src="images/image1.png" width="500"></div>
 
 ## Facteurs de l'authentification
 
@@ -87,7 +85,8 @@ Ce type d'authentification est souvent utilisé pour se protéger des faiblesses
 Aujourd’hui, il est en effet assez répandu de pouvoir activer un deuxième facteur d'authentification pour accéder à sa messagerie électronique et de devoir saisir un code reçu par SMS après avoir entré son mot de passe.
 
 
-![Placeholder](images/image2.png){ align=left }
+<!-- ![Placeholder](images/image2.png){ align=left } -->
+<div align='center'><img src="images/image2.png" width="500"></div>
 
 # Limites des facteurs d'authentification
 
